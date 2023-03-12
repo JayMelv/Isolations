@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@800&family=Roboto:wght@300&family=Ubuntu&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 40px;
+  font-family: "Roboto", sans-serif;
+}
+.table_responsive {
+  max-width: 1300px;
+  border: 1px solid #434444;
+  background-color: #efefef33;
+  padding: 15px;
+  overflow: auto;
+  margin: auto;
+  border-radius: 5px;
+}
+
+table {
+  width: 100%;
+  font-size: 15px;
+  color: #444;
+  white-space: nowrap;
+  border-collapse: collapse;
+}
+
+table > thead {
+  background-color: black;
+  color: white;
+}
+
+table > thead th {
+  padding: 15px;
+}
+
+table th,
+table td {
+  border: 1px solid black;
+  padding: 10px 15px;
+}
+
+table > tbody > tr > td > img {
+  display: inline-block;
+  width: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 10%;
+  border: 1px solid rgb(14, 13, 13);
+  box-shadow: 0 2px 6px black;
+}
+
+.action_btn {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.action_btn > a {
+  text-decoration: none;
+  color: #444;
+  background: #fff;
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 7px 20px;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: 0.3s ease-in-out;
+}
+.action_btn > a:nth-child(1) {
+  border-color: #434444;
+}
+
+.action_btn > a:nth-child(2) {
+  border-color: #868686;
+}
+
+.action_btn > a:hover {
+  box-shadow: 0 3px 8px #0003;
+}
+
+table > tbody > tr {
+  background-color: #fff;
+  transition: 0.3s ease-in-out;
+}
+table > tbody > tr:nth-child(even) {
+  background-color: rgb(238, 238, 238);
+}
+
+table > tbody > tr:hover {
+  filter: drop-shadow(0px 2px 6px #0002);
+}
+
+td {
+  text-align: center;
+}

@@ -4,61 +4,97 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="table.css" />
     <title>test</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@2.3.1/dist/purify.min.js"></script>
   </head>
   <body>
-    <div>
-      <div>Tag Number</div>
-      <div>Image</div>
-      <div>Equipment</div>
-      <div>Description</div>
-      <div>Code</div>
-      <div>Preparer</div>
-      <div>Witness</div>
-      <div>Deisolator</div>
+    <button id="pdf-button">Generate PDF</button>
+    <div class="table_responsive">
+      <table class="content-table">
+        <thead>
+          <tr>
+            <th>Tag Number</th>
+            <th>Image</th>
+            <th>Equipment</th>
+            <th>Description</th>
+            <th>Code</th>
+            <th>Preparer</th>
+            <th>Witness</th>
+            <th>Deisolator</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><img src="automated-valves-5.jpg" alt="Image 1" id="pic" /></td>
+            <td>34-KV-0704</td>
+            <td>Suction Valve Air Supply</td>
+            <td>TLC</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <span class="action_btn">
+                <a href="'#">Edit</a>
+                <a href="#">Remove</a>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><img src="automated-valves-5.jpg" alt="Image 2" id="pic" /></td>
+            <td>34-KV-0704</td>
+            <td>Suction valve Accumulator</td>
+            <td>TO</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <span class="action_btn">
+                <a href="'#">Edit</a>
+                <a href="#">Remove</a>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><img src="automated-valves-5.jpg" alt="Image 3" id="pic" /></td>
+            <td>34-KV-0705</td>
+            <td>Discharge Valve Sir Supply</td>
+            <td>TLC</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <span class="action_btn">
+                <a href="'#">Edit</a>
+                <a href="#">Remove</a>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><img src="automated-valves-5.jpg" alt="Image 4" id="pic" /></td>
+            <td>34-KV-0705</td>
+            <td>Discharge Valve Accumulator</td>
+            <td>TLO</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <span class="action_btn">
+                <a href="'#">Edit</a>
+                <a href="#">Remove</a>
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <ol>
-      <li>
-        <img src="automated-valves-5.jpg" alt="Image 1" />
-        <div class="Container">34-KV-0704</div>
-        <div class="Container">Suction Valve Air Supply</div>
-        <div class="Container">Container 3</div>
-        <div class="Container">Container 4</div>
-        <div class="Container">Container 5</div>
-        <div class="Container">Container 6</div>
-        <div class="Container">Container 7</div>
-      </li>
-      <li>
-        <img src="automated-valves-5.jpg" alt="Image 2" />
-        <div>34-KV-0704</div>
-        <div>Suction valve Accumulator</div>
-        <div>Container 3</div>
-        <div>Container 4</div>
-        <div>Container 5</div>
-        <div>Container 6</div>
-        <div>Container 7</div>
-      </li>
-      <li>
-        <img src="automated-valves-5.jpg" alt="Image 3" />
-        <div>34-KV-0705</div>
-        <div>Discharge Valve Sir Supply</div>
-        <div>Container 3</div>
-        <div>Container 4</div>
-        <div>Container 5</div>
-        <div>Container 6</div>
-        <div>Container 7</div>
-      </li>
-      <li>
-        <img src="automated-valves-5.jpg" alt="Image 4" />
-        <div>34-KV-0705</div>
-        <div>Discharge Valve Accumulator</div>
-        <div>Container 3</div>
-        <div>Container 4</div>
-        <div>Container 5</div>
-        <div>Container 6</div>
-        <div>Container 7</div>
-      </li>
-    </ol>
+
+    <script src="pump.js"></script>
   </body>
 </html>
