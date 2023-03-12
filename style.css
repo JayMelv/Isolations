@@ -1,0 +1,39 @@
+ol {
+  list-style: none;
+  counter-reset: my-counter;
+  padding: 0;
+  border: 1px solid black;
+}
+
+li {
+  counter-increment: my-counter;
+  padding: 10px;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li::before {
+  content: counter(my-counter) ". ";
+  font-weight: bold;
+}
+
+img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+.container {
+  flex: 1;
+  margin: 0 5px;
+}
+div {
+  display: flex;
+  border: solid 1px black;
+  justify-content: space-between;
+  align-items: center;
+}
