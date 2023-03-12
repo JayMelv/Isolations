@@ -1,7 +1,7 @@
 const button = document.getElementById("pdf-button");
 
 button.addEventListener("click", function () {
-  const doc = new jspdf.jsPDF();
+  const doc = new jsPDF();
   const table = document.querySelector(".content-table");
   const html = table.outerHTML;
 
